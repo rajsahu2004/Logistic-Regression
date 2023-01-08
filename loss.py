@@ -18,8 +18,3 @@ def LossEasy(x,y,w,b):
 x = range(20)
 y = np.sort(np.random.randint(0,2,20))
 loss = Loss(x,y,w=0,b=0)
-lossEasy = LossEasy(x,y,w=0,b=0)
-plt.plot(loss,label='hard')
-plt.plot(lossEasy,label='easy')
-plt.legend()
-plt.show()
