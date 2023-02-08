@@ -7,6 +7,7 @@ def Loss(x,y,w,b):
     m = len(y)
     lossArray = np.array([])
     for i in range(m):
+        loss=0
         if y[i] == 0:
             loss = -np.log(1-Predict(x[i],y[i],w,b))
         elif y[i] == 1:
